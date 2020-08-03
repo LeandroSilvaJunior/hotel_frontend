@@ -52,6 +52,7 @@ Os hospedes e estadias cadastrados pordem ser visualizados no arquivo db.json no
 
 ## Falta fazer
 * Corrigir erro de timezone na persistencia do check-in
+* Implementar edição/exclusão de hospedes
 * Implementar filtragem na busca de hospedes
 * Implementar paginação na busca de hospedes
 * Implementar visualização do valor total gasto por hospede
