@@ -1,0 +1,71 @@
+<div class="container">
+  <ng-template #content let-modal>
+    <div class="modal-header bg-primary">
+      <h4 class="modal-title" id="modal-title">Incluir pessoa</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <form class="form-horizontal" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text"
+                 class="form-control"
+                 [ngClass]="getErrorClass('nome')"
+                 id="nome"
+                 formControlName="nome"
+                 required="true">
+          <div class="invalid-feedback" *ngIf="_nome.hasError('required')">
+            Campo obrigatório
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="numeroDocumento">Documento</label>
+            <input type="text"
+                   class="form-control "
+                   [ngClass]="getErrorClass('numeroDocumento')"
+                   id="numeroDocumento"
+                   formControlName="numeroDocumento"
+                   mask="000.000.000-00"
+                   required="true">
+            <div class="invalid-feedback" *ngIf="_numeroDocumento.hasError('required')">
+              Campo obrigatório
+            </div>
+            <div class="invalid-feedback" *ngIf="_numeroDocumento.hasError('mask')">
+              Documento inválido
+            </div>
+          </div>
+          <div class="form-group col">
+            <label for="numeroTelefone">Telefone</label>
+            <input type="text"
+                   class="form-control"
+                   [ngClass]="getErrorClass('numeroTelefone')"
+                   id="numeroTelefone"
+                   formControlName="numeroTelefone"
+                   mask="(00) 00000-0000"
+                   required="true">
+            <div class="invalid-feedback" *ngIf="_numeroTelefone.hasError('required')">
+              Campo obrigatório
+            </div>
+            <div class="invalid-feedback" *ngIf="_numeroTelefone.hasError('mask')">
+              Telefone inválido
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="modal.close()">Cancelar</button>
+        <button type="submit" class="btn btn-primary" [disabled]="formulario.invalid">Salvar</button>
+      </div>
+    </form>
+  </ng-template>
+  <div class="row">
+    <div class="col-12">
+      <button type="button" class="btn btn-primary" (click)="open(content)">Incluir pessoa</button>
+    </div>
+  </div>
+  <app-toasts aria-live="polite" aria-atomic="true" ></app-toasts>
+</div>
+

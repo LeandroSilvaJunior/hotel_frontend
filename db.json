@@ -1,0 +1,84 @@
+{
+  "hospedes": [
+    {
+      "nome": "Leandro da Silva Junior",
+      "numeroDocumento": "09389284902",
+      "numeroTelefone": "47999601628",
+      "id": 1
+    },
+    {
+      "nome": "Ana Carolina",
+      "numeroDocumento": "72640301055",
+      "numeroTelefone": "47992263605",
+      "id": 2
+    },
+    {
+      "nome": "Lais Carolina",
+      "numeroDocumento": "91418848093",
+      "numeroTelefone": "47888632578",
+      "id": 3
+    },
+    {
+      "nome": "Lendro da Silva Junior",
+      "numeroDocumento": "09389284902",
+      "numeroTelefone": "47999601628",
+      "id": 4
+    },
+    {
+      "nome": "teste",
+      "numeroDocumento": "39487669086",
+      "numeroTelefone": "47333561869",
+      "id": 5
+    },
+    {
+      "nome": "Teste toast",
+      "numeroDocumento": "00775630004",
+      "numeroTelefone": "47555963218",
+      "id": 6
+    },
+    {
+      "nome": "teste dos testes",
+      "numeroDocumento": "06668553079",
+      "numeroTelefone": "47344856278",
+      "id": 7
+    },
+    {
+      "nome": "Teste reload",
+      "numeroDocumento": "60684526034",
+      "numeroTelefone": "47556348964",
+      "id": 8
+    },
+    {
+      "nome": "Só reza",
+      "numeroDocumento": "49344040079",
+      "numeroTelefone": "47993586123",
+      "id": 9
+    }
+  ],
+  "estadias": [
+    {
+      "dataEntrada": "2020-08-03T05:07:51.125Z",
+      "dataSaida": "2020-08-06T05:07:51.000Z",
+      "hospede_id": 2,
+      "possuiVeiculo": false,
+      "valor": null,
+      "id": 2
+    },
+    {
+      "dataEntrada": "2020-08-03T05:18:10.679Z",
+      "dataSaida": "2020-08-12T05:18:11.000Z",
+      "hospede_id": 7,
+      "possuiVeiculo": false,
+      "valor": null,
+      "id": 3
+    },
+    {
+      "dataEntrada": "2020-08-03T05:46:28.052Z",
+      "dataSaida": "2020-08-13T05:46:28.000Z",
+      "hospede_id": 3,
+      "possuiVeiculo": true,
+      "valor": 1420,
+      "id": 4
+    }
+  ]
+}

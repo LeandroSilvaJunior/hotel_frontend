@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <h5 class="card-header bg-primary">Consultas</h5>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Documento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let hospede of hospedes">
+                <td scope="row">{{ hospede.nome }}</td>
+                <td>{{ hospede.numeroDocumento}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
